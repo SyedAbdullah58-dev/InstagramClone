@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/button_black_background"
+android:layout_marginLeft="100dp"
+android:layout_marginRight="100dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+android:gravity="center"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/profile"
+
+
+            android:id="@+id/profile_search"
+            android:padding="10dp"
+android:foregroundGravity="center"
+
+            android:layout_centerHorizontal="true"
+            >
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:id="@+id/profile_search_text"
+    android:text="username"
+    android:textSize="16dp"
+    android:gravity="center"
+    android:textColor="@color/colorPrimary"
+    android:layout_below="@id/profile_search"
+    ></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_search_text2"
+            android:text="user profile name"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@id/profile_search_text"
+            ></TextView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/button_black_background"
+            android:layout_centerHorizontal="true"
+          android:layout_marginTop="10dp"
+            android:layout_below="@id/profile_search_text2"
+            android:text="Follow"
+            android:textAllCaps="false"
+            android:id="@+id/follow_button"
+            ></Button>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ui"
+    tools:context=".Signup">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/logo"
+        android:layout_height="60dp"
+        android:tint="@color/cardview_light_background"
+        android:src="@drawable/instagram"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        ></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(Register Here!!)"
+        android:id="@+id/register_text"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/cardview_light_background"
+        android:textStyle="bold|italic"
+        android:layout_marginBottom="5dp"
+
+        >
+
+
+    </TextView>
+    <EditText
+        android:id="@+id/fullname_reg"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:background="@drawable/inputs_background"
+        android:inputType="text"
+        android:hint="Full Name"
+        android:layout_marginTop="16dp"
+
+        ></EditText>
+    <EditText
+        android:id="@+id/username_reg"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fullname_reg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:background="@drawable/inputs_background"
+        android:inputType="text"
+        android:hint="User Name"
+        android:layout_marginTop="16dp"
+
+        ></EditText>
+    <EditText
+        android:id="@+id/email_reg"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username_reg"
+        android:layout_marginLeft="20dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:background="@drawable/inputs_background"
+
+        android:hint="Someone@gmail.com"
+        android:layout_marginTop="16dp"
+
+        ></EditText>
+    <EditText
+        android:id="@+id/password_reg"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_reg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:background="@drawable/inputs_background"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="16dp"
+        ></EditText>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_reg"
+        android:background="@drawable/button_black_background"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="26dp"
+        android:textSize="16dp"
+        android:id="@+id/regbutton"
+        android:textAllCaps="false"
+        android:text="Register"
+        android:padding="10dp"
+        >
+
+
+
+    </Button>
+
+    <Button
+        android:id="@+id/Login_now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="16dp"
+        android:textSize="16dp"
+        android:background="@color/design_default_color_primary"
+        android:textColor="@color/cardview_light_background"
+        android:textAllCaps="false"
+        android:text="Login Now !"
+        android:padding="10dp"
+        >
+
+    </Button>
+
+</RelativeLayout>
